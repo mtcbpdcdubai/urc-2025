@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/logo_mtc.svg">
+    <title>URC - Undergraduate Research Competition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes carousel {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); } /* Moves only half since images are duplicated */
+        }
+
+        .carousel-container {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+
+        .carousel-track {
+            display: flex;
+            width: max-content;
+            animation: carousel 60s linear infinite;
+        }
+
+        .carousel-track img {
+            flex-shrink: 0;
+            height: 300px; /* Fixed height */
+            width: 500px;  /* Fixed width */
+            object-fit: cover; /* Ensures consistent appearance */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <nav class="flex justify-between items-center p-6">
+        <h1 class="text-2xl font-bold">URC • InterSys 2025</h1>
+        <a href="https://forms.gle/gJb52uejZAHFTYLb9" class="px-4 py-2 bg-blue-600 rounded-md hover:bg-blue-500 transition">Register</a>
+    </nav>
+
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <img src="src/1.JPG">
+            <img src="src/2.JPG">
+            <img src="src/3.JPG">
+            <img src="src/4.JPG">
+            <img src="src/5.JPG">
+            <img src="src/6.JPG">
+            <img src="src/7.JPG">
+            <img src="src/1.JPG">
+            <img src="src/2.JPG">
+            <img src="src/3.JPG">
+            <img src="src/4.JPG">
+            <img src="src/5.JPG">
+            <img src="src/6.JPG">
+            <img src="src/7.JPG">
+        </div>
+    </div>
+
+    <section class="flex flex-col items-center justify-center min-h-screen text-center px-6 mt-[-230px]">
+        <h2 class="text-5xl font-extrabold leading-tight">Undergraduate Research Competition</h2>
+        <p class="text-gray-400 mt-4 max-w-2xl">
+            Making available to students the opportunities provided to academicians, researchers, and industry practitioners.
+        </p>
+        <div class="mt-6">
+            <a href="https://forms.gle/gJb52uejZAHFTYLb9" class="px-6 py-3 bg-blue-600 rounded-md text-lg font-semibold hover:bg-blue-500 transition">
+                Join URC Today!
+            </a>
+        </div>
+    </section>
+
+    <section class="py-16 px-6 bg-gray-800 mt-[-200px]">
+        <h2 class="text-4xl font-bold text-center mb-8">About the Competition</h2>
+        <div class="max-w-3xl mx-auto text-gray-300 text-center">
+            <ul class="mt-6 space-y-2 inline-block text-left">
+                <li class="flex items-start"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2 mt-1"></span>Teams of up to 3 (supervisor not included)</li>
+                <li class="flex items-start"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2 mt-1"></span>Submit abstract for one of the 3 tracks</li>
+                <li class="flex items-start"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2 mt-1"></span>Present research to a panel of experts</li>
+                <li class="flex items-start"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2 mt-1"></span>Win prizes and recognition for research!</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="py-16 px-6">
+        <h2 class="text-4xl font-bold text-center mb-8">Competition Themes</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gray-800 p-6 rounded-lg text-center shadow-lg flex flex-col justify-between">
+                <h3 class="text-2xl font-semibold">Core Computer Sciences</h3>
+                <p class="text-gray-400 mt-4">For students working on foundational research in computing.</p>
+                <ul class="text-left text-gray-300 mt-6 space-y-2">
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>Algorithms & Data Structures</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>Computational Complexity & Automata Theory</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>Machine Learning & AI Theory</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>Programming Languages & Compiler Design</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>Cryptography & Secure Computing</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>High-Performance & Quantum Computing</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg text-center shadow-lg flex flex-col justify-between">
+                <h3 class="text-2xl font-semibold">Applied Computer Science & Interdisciplinary Research</h3>
+                <p class="text-gray-400 mt-4">For students exploring AI and computing applications in diverse fields.</p>
+                <ul class="text-left text-gray-300 mt-6 space-y-2">
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>AI & Data Science for Engineering Solutions</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>Human-Computer Interaction & Smart Interfaces</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>Virtual, Augmented & Mixed Reality (VR/AR/MR)</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>AI for Healthcare, Sustainability & Smart Cities</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>Cyber-Physical Systems & IoT-based Solutions</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>Robotics, Automation & Digital Twins</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg text-center shadow-lg flex flex-col justify-between">
+                <h3 class="text-2xl font-semibold">AI & Emerging Technologies in Other Disciplines</h3>
+                <p class="text-gray-400 mt-4">For students from Mechanical, Civil, Electrical, Biotechnology, and other disciplines who apply AI and computational methods to their research.</p>
+                <ul class="text-left text-gray-300 mt-6 space-y-2">
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>Smart Materials & AI-assisted Manufacturing</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>Structural Health Monitoring & AI in Construction</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>AI-driven Power Systems & Renewable Energy</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>AI for Bioinformatics & Healthcare Innovations</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-gray-300 rounded-full mr-2"></span>Sustainable Transport, Traffic Management & AI-driven Infrastructure</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-6 bg-gray-900">
+        <h2 class="text-4xl font-bold text-center mb-8 text-white">Prizes</h2>
+        <div class="max-w-4xl mx-auto flex items-center justify-center text-gray-300">
+            <div class="text-center text-lg md:text-xl flex-1">
+                <h3 class="text-3xl font-semibold text-gray-400">2<sup>nd</sup> Place</h3>
+                <p class="text-xl font-bold text-gray-500">2000 AED</p>
+            </div>
+    
+            <div class="text-center text-lg md:text-xl flex-1">
+                <h3 class="text-5xl font-extrabold text-white">1<sup>st</sup> Place</h3>
+                <p class="text-2xl font-bold text-yellow-400">3000 AED</p>
+            </div>
+    
+            <div class="text-center text-lg md:text-xl flex-1">
+                <h3 class="text-3xl font-semibold text-gray-400">3<sup>rd</sup> Place</h3>
+                <p class="text-xl font-bold text-gray-500">1000 AED</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-6">
+        <h2 class="text-4xl font-bold text-center mb-8">Key Dates</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gray-800 p-6 rounded-lg text-center shadow-lg">
+                <h3 class="text-xl font-semibold">Abstract Submission Deadline</h3>
+                <p class="text-gray-400 mt-2">April 15, 2025</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg text-center shadow-lg">
+                <h3 class="text-xl font-semibold">Abstract Acceptance Notification</h3>
+                <p class="text-gray-400 mt-2">April 20, 2025</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg text-center shadow-lg">
+                <h3 class="text-xl font-semibold">Presentation Date</h3>
+                <p class="text-gray-400 mt-2">May 5, 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-6 text-gray-500">
+        &copy; <span id="year"></span> URC. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
